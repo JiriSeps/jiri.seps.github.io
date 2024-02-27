@@ -1,1 +1,1 @@
-https://jiriseps.github.io/
+jiriseps.github.io/
