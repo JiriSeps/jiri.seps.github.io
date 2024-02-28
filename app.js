@@ -16,9 +16,9 @@ $(document).ready(function(){
     function handleParallax() {
         const scrolled = $(window).scrollTop();
         // First parallax with slower speed
-        $('.parallax-bg.slower').css('transform', 'translateY(' + -(scrolled * 0.1) + 'px)');
+        $('.parallax-bg.slower').css('transform', 'translateY(' + -(scrolled * 0.15) + 'px)');
         // Second parallax with faster speed
-        $('.parallax-bg.faster').css('transform', 'translateY(' + -(scrolled * 0.2) + 'px)');
+        $('.parallax-bg.faster').css('transform', 'translateY(' + -(scrolled * 0.25) + 'px)');
     }
     
     // Call handleParallax function when the page is loaded

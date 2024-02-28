@@ -4,15 +4,15 @@
     --dark:#2c2a2a;
     --pure:#ffffff;
     --ternary:#ffffff;
-    --light:#343232;
-    --secondary:#1a1204;
+    --light:#3d3a3a;
+    --secondary:#242323;
     --blue:#00c3ff;
+    --pureblack:#000000;
 }
 
 body {
     background:var(--dark);
     font-family: 'Poppins', sans-serif; /* Adjust font family as needed */
-    overflow-x: hidden; /* Hide horizontal scrollbar */
 
 }
 .parallax-bg {
@@ -134,7 +134,7 @@ section.about .movingimage{
     z-index: 1;
 }
 section.about h2{
-    color:var(--secondary);
+    color:var(--pure);
     margin-bottom: 1rem;
     font-size:1.6rem;
     font-weight:400;
@@ -143,7 +143,7 @@ section.about h2 span{
     color:var(--primary);
 }
 section.about h3{
-    color:var(--secondary);
+    color:var(--pure);
     font-size: 1rem;
     margin-bottom:1rem;
     font-weight: 400;
@@ -151,7 +151,7 @@ section.about h3{
 
 section.about p{
     font-family:'Lato', sans-serif;
-    color:var(--dark);
+    color:var(--pure);
     line-height: 1.8;
     margin-bottom:2rem;
 }
@@ -201,20 +201,21 @@ img {
 .section-heading{
    color:var(--secondary); 
    text-align: center;
-   margin-top:8rem;
-   margin-bottom:1rem;
-   line-height:0.5;
+   margin-top:5rem;
+   margin-bottom:2rem;
+   line-height:0.1;
 }
 .section-heading span{
     color:var(--primary);
 }
 
 
-.section-heading + p{
-   color:var(--pure);
-   font-family:'Lato', sans-serif;
-   margin-bottom:8rem;
+.section-heading + p {
+    color: var(--secondary);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 8rem;
     text-align: center;
+    font-weight: bold;
 }
 section.awards{
     background:var(--light);
@@ -333,7 +334,8 @@ section.reviews .slider .slide p{
     margin-bottom: 1rem;
 }
 section.reviews .slider .slide span{
-    font-size: 0.8rem;
+    font-size: 1rem;
+    color:var(--pure);
 }
 section.reviews .slider-dots .dots{
     list-style-type:none;
@@ -342,7 +344,7 @@ section.reviews .slider-dots .dots{
 }
 
 section.reviews .slider-dots{
-    margin-top:3rem;
+    margin-top:1rem;
 }
 
 section.reviews .slider-dots button{
@@ -387,7 +389,7 @@ section.locations .card-wrapper .card .overlay{
     background:rgba(160, 160, 160, 0.9);
     display:flex;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     flex-direction:column;
     color:var(--dark);
     opacity:0;
