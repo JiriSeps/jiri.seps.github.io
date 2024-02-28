@@ -27,6 +27,15 @@ $(document).ready(function(){
     // Call handleParallax function when the user scrolls
     $(window).on('scroll', handleParallax);
     
+    // Function to handle background movement based on mouse position
+    $(document).on('mousemove', function(e) {   
+        const mouseX = e.pageX;
+        const mouseY = e.pageY;
+        const bgOffsetX = (mouseX - $(window).width() / 2) / 200;
+        const bgOffsetY = (mouseY - $(window).height() / 2) / 200;
+        $('.movingimage').css('transform', 'translate(' + bgOffsetX + 'px, ' + bgOffsetY + 'px)');
+    });
+    
     // Mobile navigation functionality
     let hamburger = document.querySelector('.hamburger');
     let times = document.querySelector('.times');

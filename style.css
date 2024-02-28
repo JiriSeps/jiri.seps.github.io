@@ -11,10 +11,9 @@
 
 body {
     background:var(--dark);
-    margin: 0;
     font-family: 'Poppins', sans-serif; /* Adjust font family as needed */
     overflow-x: hidden; /* Hide horizontal scrollbar */
-    width: 100%;
+
 }
 .parallax-bg {
     position: absolute;
@@ -27,42 +26,30 @@ body {
     z-index: -1; /* Ensure it stays behind other content */
 }
 
-.slower {
+.slower, .faster {
     height: 100vh;
 }
-
-.faster {
-    height: 100vh;
-}
-
 
 html{
     scroll-behavior: smooth;
 }
 *{
     padding: 0;
-    margin:0;
-    box-sizing: border-box;
+    margin: 0;
+    box-sizing:border-box;
     -webkit-font-smoothing:antialiased;
 }
 header {
-    background: linear-gradient(to bottom, var(--dark), var(--dark)); /* Adjust colors as needed */
+    background: var(--dark); /* Adjust colors as needed */
     clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 75% 100%, 0 110%);
 }
 .container{
-    max-width:1200px;
-    padding:0 20px;
+    max-width:1152px;
+    padding:0 15px;
     margin:0 auto;
 }
 
-  .character-image {
-    position: relative; /* Allow precise positioning within the container */
-    right: 300px; /* Position the image on the right side */
-    bottom: 100px; /* Adjust the offset from the bottom*/
-    max-width: 50%; /* Limit the size so the character doesn't take up too much space */
-  }
-
-@media (min-width: 100px) {
+@media (min-width: 576px) {
     .container {
       max-width: 540px;
     }
@@ -82,7 +69,7 @@ header {
   
   @media (min-width: 1200px) {
     .container {
-      max-width: 1500px;
+      max-width: 1152px;
     }
   }
 
@@ -111,7 +98,7 @@ header nav .branding{
     padding:3rem 0;
 }
 .hero .left img{
-    width:500px;
+    width:400px;
 }
 .hero .right{
     color:var(--pure);
@@ -132,18 +119,19 @@ header nav .branding{
 }
 .hero .right p{
     line-height:1.9;
-    margin-bottom:10rem;
+    margin-bottom:2rem;
 }
 .hero .right {
-    margin-top:-10rem;
+    margin-top:-7rem;
 }
 
 section{
-    padding: 7.8rem 0 ;
+    padding: 6rem 0 ;
 }
-section.about .radahn{
+section.about .movingimage{
     height:500px;
     max-width: 100%; /* Limit the size so the character doesn't take up too much space */
+    z-index: 1;
 }
 section.about h2{
     color:var(--secondary);
@@ -213,9 +201,9 @@ img {
 .section-heading{
    color:var(--secondary); 
    text-align: center;
-   margin-top:2.5rem;
+   margin-top:8rem;
    margin-bottom:1rem;
-   line-height: 0.5;
+   line-height:0.5;
 }
 .section-heading span{
     color:var(--primary);
@@ -225,7 +213,7 @@ img {
 .section-heading + p{
    color:var(--pure);
    font-family:'Lato', sans-serif;
-   margin-bottom:5rem;
+   margin-bottom:8rem;
     text-align: center;
 }
 section.awards{
@@ -234,8 +222,8 @@ section.awards{
 section.awards .card-wrapper{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap:5rem;
-    grid-row-gap:10rem;
+    grid-column-gap:2rem;
+    grid-row-gap:6rem;
 }
 
 .awards {
@@ -286,18 +274,20 @@ section.awards .card-wrapper .card p{
     line-height:1.6;
 }
 
-section.awards .card-wrapper .card:hover{
+section.awards .card-wrapper .card:hover{   
     background: var(--pure);  
 }
 section.awards .card-wrapper .card:hover h2, section.awards .card-wrapper .card:hover p{
     color:var(--dark);
+    
 }
 
 section.freelancer{
+    padding-top: 8rem;
     text-align: center;
     color:var(--pure);
-    clip-path:polygon(0 0, 100% 0, 100% 30%, 50% 75%, 0 30%);
-    padding-bottom:14rem;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 90%, 0 70%);
+    padding-bottom:30rem;
 }
 section.freelancer h1{
     font-size:3rem;
@@ -309,6 +299,16 @@ section.freelancer p{
     font-family:'Lato', sans-serif;
 }
 
+
+section.reviews .movingimage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Set width to cover the entire viewport */
+    height: 100%; /* Allow height to adjust proportionally */
+    z-index: -2;
+}
+
 section.reviews .slider .slide img{
     width:300px;
     height:300px;
@@ -318,6 +318,7 @@ section.reviews .slider .slide img{
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     object-fit:contain;
+    margin-bottom:2rem;
 }
 section.reviews .slider .slide{
     text-align: center;
@@ -325,11 +326,11 @@ section.reviews .slider .slide{
     align-items: center;
     flex-direction: column;
     padding:0 10rem;
-
 }
 section.reviews .slider .slide p{
     font-family: 'Lato', sans-serif;
     color:var(--ternary);
+    margin-bottom: 1rem;
 }
 section.reviews .slider .slide span{
     font-size: 0.8rem;
@@ -340,15 +341,19 @@ section.reviews .slider-dots .dots{
     justify-content: center;
 }
 
+section.reviews .slider-dots{
+    margin-top:3rem;
+}
+
 section.reviews .slider-dots button{
     font-size:0;
     width:10px;
     height:10px;
-    margin-right:0.2rem;
+    margin-right:0.5rem;
     border: none;
     outline:none;
     background:var(--ternary);
-    border-radius: 50px;
+    border-radius: 500px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
@@ -365,12 +370,12 @@ section.locations{
 }
 section.locations .card-wrapper{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(3,2fr);
     grid-gap:2rem;
 }
 section.locations .card-wrapper .card{
     position:relative;
-    height:250px;
+    height:200px;
 
 }
 section.locations .card-wrapper .card .overlay{
@@ -393,7 +398,7 @@ section.locations .card-wrapper .card .overlay{
     -o-transition:all .3s ease;
 }
 section.locations .card-wrapper .card:hover .overlay{
-    opacity:1;
+    opacity:0.8;
 }
 
 section.locations .card-wrapper .card .overlay a{
