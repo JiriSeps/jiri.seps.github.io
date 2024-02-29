@@ -15,10 +15,10 @@ $(document).ready(function(){
     // Function to handle the parallax effect
     function handleParallax() {
         const scrolled = $(window).scrollTop();
-        // First parallax with slower speed
-        $('.parallax-bg.slower').css('transform', 'translateY(' + -(scrolled * 0.15) + 'px)');
-        // Second parallax with faster speed
-        $('.parallax-bg.faster').css('transform', 'translateY(' + -(scrolled * 0.25) + 'px)');
+        // Adjust scroll speed for mobile
+        const scrollMultiplier = $(window).width() > 768 ? 0.15 : 0.08;
+        $('.parallax-bg.slower').css('transform', 'translateY(' + -(scrolled * scrollMultiplier) + 'px)');
+        $('.parallax-bg.faster').css('transform', 'translateY(' + -(scrolled * (scrollMultiplier + 0.1)) + 'px)');
     }
     
     // Call handleParallax function when the page is loaded
