@@ -199,7 +199,7 @@ img {
 .section-heading{
    color:var(--secondary); 
    text-align: center;
-   margin-top:4rem;
+   margin-top: 5rem;
    margin-bottom:4rem;
    line-height:0.1;
 }
@@ -231,7 +231,7 @@ section.awards .card-wrapper{
 
 .awards .special-image {
     position: absolute;
-    top: 0; /* Adjust the vertical position as needed */
+    top: -10px; /* Adjust the vertical position as needed */
     left: 50%; /* Center the image horizontally */
     transform: translateX(-50%); /* Adjust to horizontally center the image */
     width: 300px;
