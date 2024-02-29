@@ -132,7 +132,7 @@ section.about .movingimage{
     z-index: 1;
 }
 section.about h2{
-    color:var(--pure);
+    color:var(--pureblack);
     margin-bottom: 1rem;
     font-size:1.6rem;
     font-weight:400;
@@ -141,7 +141,7 @@ section.about h2 span{
     color:var(--primary);
 }
 section.about h3{
-    color:var(--pure);
+    color:var(--pureblack);
     font-size: 1rem;
     margin-bottom:1rem;
     font-weight: 400;
@@ -149,7 +149,7 @@ section.about h3{
 
 section.about p{
     font-family:'Lato', sans-serif;
-    color:var(--pure);
+    color:var(--pureblack);
     line-height: 1.8;
     margin-bottom:2rem;
 }
