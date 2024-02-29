@@ -19,7 +19,7 @@ body {
     position: absolute;
     left: 0;
     width: 100%;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     z-index: -1; /* Ensure it stays behind other content */
 }
