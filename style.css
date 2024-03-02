@@ -708,16 +708,17 @@ footer .copyright{
     }
     .sysrequirements-platforms,
     .sysrequirements-hardware {
-        width: 100%;
+        width: calc(50% - 10px); /* Set the width of each list to 50% of the container width minus margin */
         margin-bottom: 20px;
     }
     .sysrequirements-hardware {
-        order: 1; /* Change the order to display hardware list below platforms list */
+        order: 2; /* Change the order to display hardware list below platforms list */
     }
     .sysrequirements-list {
         margin-top: 20px;
     }
     .sysrequirements-table {
+        width: calc(100% - 20px); /* Set the width of the table to 100% of the container width minus margin */
         overflow-x: auto;
     }
 }
