@@ -703,4 +703,21 @@ footer .copyright{
     section.contact .input-wrap{
         grid-template-columns: repeat(1, 1fr);
     }
+    .sysrequirements-wrapper {
+        flex-direction: column;
+    }
+    .sysrequirements-platforms,
+    .sysrequirements-hardware {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .sysrequirements-hardware {
+        order: 1; /* Change the order to display hardware list below platforms list */
+    }
+    .sysrequirements-list {
+        margin-top: 20px;
+    }
+    .sysrequirements-table {
+        overflow-x: auto;
+    }
 }
