@@ -296,52 +296,172 @@
         <section class="contact">
             <div class="container">
                 <h2 class="section-heading">Contact <span>Us</span></h2>
-                <p>In progress</p>
                 <div class="card-wrapper">
-                    <div class="card">
-                        <img src="./obrazky/phone-2.svg" alt="">
-                        <h2>Name</h2>
-                        <h6>In progress</h6>
-                    </div>
-                    <div class="card">
-                        <img src="./obrazky/msg.svg" alt="">
-                        <h2>Email</h2>
-                        <h6>In progress</h6>
-                    </div>
-                    <div class="card">
-                        <img src="./obrazky/map.svg" alt="">
-                        <h2>In Progress</h2>
-                        <h6>In progress</h6>
-                    </div>
-
                 </div>
-
                 <form action="">
-                    <div class="input-wrap">
-                        <input type="text" placeholder="Your Name *">
-                        <input type="email" placeholder="Your Email *">
-                    </div>
-                    <div class="input-wrap-2">
-                        <input type="text" placeholder="Your Subject...">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message..."></textarea>
-                    </div>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <div class="input-wrap">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name">
+                            <label for="email">Your Email *</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Message</legend>
+                        <div class="input-wrap-2">
+                            <label for="subject">Your Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Enter your subject">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                        </div>
+                    </fieldset>
                     <div class="btn-wrapper">
-                        <button class="btn btn-primary">In progress</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                 </form>
+            </div>        
+        </div>
+        </section>
+        <section class="sysrequirements" style="background: var(--dark);">
+            <div class="container">
+                <h2 class="section-heading" style="color: var(--pure);"><span>System Requirements</span></h2>
+                <div class="sysrequirements-wrapper" style="display: flex;">
+                    <div class="sysrequirements-platforms" style="color: var(--pure);">
+                        <h3 style="color: var(--pure);">Platforms & Space</h3>
+                        <ol>
+                            <li>PlayStation 5
+                                <ul>
+                                    <li>Storage: 70 GB</li>
+                                </ul>
+                            </li>
+                            <li>Xbox Series X|S
+                                <ul>
+                                    <li>Storage: 70 GB</li>
+                                </ul>
+                            </li>
+                            <li>PC (Steam)
+                                <ul>
+                                    <li>Storage: 70 GB</li>
+                                </ul>
+                            </li>
+                            <li>PlayStation 4
+                                <ul>
+                                    <li>Storage: 70 GB</li>
+                                </ul>
+                            </li>
+                            <li>Xbox One
+                                <ul>
+                                    <li>Storage: 70 GB</li>
+                                </ul>
+                            </li>
+                            <li>Google Stadia
+                                <ul>
+                                    <li>Storage: 70 GB</li>
+                                </ul>
+                            </li>
+                            <li>Amazon Luna
+                                <ul>
+                                    <li>Storage: 70 GB</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="sysrequirements-hardware" style="color: var(--pure);">
+                        <h3 style="color: var(--pure);">Hardware Support</h3>
+                        <ol>
+                            <li>Mouse & Keyboard</li>
+                            <li>Gamepad (Xbox/PlayStation)</li>
+                            <li>VR Headsets (PC)</li>
+                            <li>Joystick (Flight Simulator Peripherals)</li>
+                            <li>Touchscreen (Mobile)</li>
+                            <li>Wheel (Racing Peripherals)</li>
+                            <li>Motion Controllers (VR/Motion-based Games)</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="sysrequirements-wrapper" style="display: flex; justify-content: space-between; color: var(--pure);">
+                    <div class="sysrequirements-list">
+                        <h3>Minimum Requirements</h3>
+                        <ul>
+                            <li>Operating System: Windows 10</li>
+                            <li>Processor: Intel Core i5-7500 / AMD Ryzen 5 3600</li>
+                            <li>Memory: 8 GB RAM</li>
+                            <li>Graphics: NVIDIA GeForce GTX 1060 / AMD Radeon RX 580</li>
+                            <li>DirectX: Version 11</li>
+                            <li>Storage: 50 GB available space</li>
+                            <li>Sound Card: DirectX compatible soundcard or onboard chipset</li>
+                        </ul>
+                    </div>
+                    <div class="sysrequirements-list">
+                        <h3>Recommended Requirements</h3>
+                        <ul>
+                            <li>Operating System: Windows 11</li>
+                            <li>Processor: Intel Core i7-9700K / AMD Ryzen 7 3700X</li>
+                            <li>Memory: 16 GB RAM</li>
+                            <li>Graphics: NVIDIA GeForce RTX 3060 / AMD Radeon RX 6700 XT</li>
+                            <li>DirectX: Version 12</li>
+                            <li>Storage: 100 GB available space</li>
+                            <li>Sound Card: DirectX compatible soundcard or onboard chipset</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sysrequirements-table" style="margin-top: 20px; text-align: center;">
+                    <h3 style="color: var(--pure);">Graphics Settings</h3>
+                    <table border="1" cellpadding="5" cellspacing="0" style="color: var(--pure); margin: 0 auto;">
+                        <thead>
+                            <tr>
+                                <th rowspan="2">Setting</th>
+                                <th colspan="2">Minimum</th>
+                                <th colspan="2">Recommended</th>
+                            </tr>
+                            <tr>
+                                <th>Resolution</th>
+                                <th>Quality</th>
+                                <th>Resolution</th>
+                                <th>Quality</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Low</td>
+                                <td>1280x720</td>
+                                <td>Low</td>
+                                <td>1920x1080</td>
+                                <td>High</td>
+                            </tr>
+                            <tr>
+                                <td>Medium</td>
+                                <td>1600x900</td>
+                                <td>Medium</td>
+                                <td>2560x1440</td>
+                                <td>Ultra</td>
+                            </tr>
+                            <tr>
+                                <td>High</td>
+                                <td>1920x1080</td>
+                                <td>High</td>
+                                <td>3840x2160</td>
+                                <td>Ultra</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
+        
         <footer>
-            <img class="footer-logo" src="./obrazky/fortynajtyj.png" alt="">
+            <img class="footer-logo" src="./obrazky/stars-svgrepo-com.svg" alt="">
             <div class="footer-socials">
                 <a href="#"><img src="./obrazky/website.svg" alt=""></a>
-                <a href="https://www.facebook.com"><img src="./obrazky/facebook.svg" alt=""></a>
-                <a href="https://twitter.com"> <img src="./obrazky/twitter.svg" alt=""></a>
-                <a href="#"> <img src="./obrazky/pintrest.svg" alt=""></a>
+                <a href="https://www.facebook.com"><img src="./obrazky/facebook-svgrepo-com.svg" alt=""></a>
+                <a href="https://twitter.com"> <img src="./obrazky/twitter-svgrepo-com.svg" alt=""></a>
+                <a href="https://twitch.com"> <img src="./obrazky/twitch-icon.svg" alt=""></a>
                 <a href="https://www.instagram.com"> <img src="./obrazky/instagram.svg" alt=""></a>
             </div>
             <div class="copyright">
-                Copyright 2024 © Jiri Seps
+                Copyright 2024 ©
             </div>
         </footer>
     </div>

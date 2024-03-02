@@ -127,7 +127,7 @@ section{
     padding: 6rem 0 ;
 }
 section.about .movingimage{
-    height:500px;
+    height:auto;
     max-width: 100%; /* Limit the size so the character doesn't take up too much space */
     z-index: 1;
 }
@@ -483,35 +483,39 @@ section.contact .card-wrapper .card h6{
     margin-bottom:4rem;
 }
 
-section.contact .input-wrap{
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap:2rem;
-    margin-bottom:2rem;
-}
-section.contact .input-wrap-2{
+
+.sysrequirements .sysrequirements-wrapper {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
 }
-section.contact .input-wrap-2 input{
-    margin-bottom:2rem;
+
+.sysrequirements .sysrequirements-wrapper .sysrequirements-list {
+    flex: 1;
 }
-section.contact input{
-    padding:0.5rem;
-    border:1px solid var(--light);
-    font-size: 0.9rem;
+
+.sysrequirements .sysrequirements-wrapper .sysrequirements-list ul {
+    list-style-type: none;
+    padding: 0;
 }
-section.contact .input-wrap-2 textarea{
-    padding:0.5rem;
-    border:1px solid var(--light);
-    font-size: 0.9rem;
+
+.sysrequirements .sysrequirements-wrapper .sysrequirements-list ul li {
+    margin-bottom: 10px;
 }
-section.contact .input-wrap-2 textarea:focus, section.contact input:focus{
-    outline:none;  
+
+.sysrequirements .sysrequirements-table table {
+    border-collapse: collapse;
+    width: 100%;
 }
-section.contact .btn-wrapper{
-    text-align: center;
-    margin-top:2rem;
+
+.sysrequirements .sysrequirements-table table th,
+.sysrequirements .sysrequirements-table table td {
+    padding: 10px;
+    border: 1px solid var(--light);
+}
+
+.sysrequirements .sysrequirements-table table th {
+    background-color: var(--dark);
 }
 
 footer{
@@ -620,7 +624,7 @@ footer .copyright{
         padding-top:10rem;
     }
     header{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 89%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 75% 100%, 0 110%);
     }
     section.about .about-me-img{
         height: 360px;
@@ -644,12 +648,16 @@ footer .copyright{
         flex-direction: column;
     }
     header{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 95%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 75% 100%, 0 110%);
     }
     .hero .right{
         position: absolute;
         top:260px;
         padding:0 1rem;
+    }
+    section.about .movingimage {
+        height: auto; /* Set height to auto for responsiveness */
+        max-width: 100%;
     }
     .hero .left{
         margin-top:-5rem;
@@ -677,7 +685,7 @@ footer .copyright{
         line-height:1.2;
     }
     section.freelancer{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 75%, 0 60%);
         padding-bottom: 8rem;
     }
     section.reviews .slider .slide{
