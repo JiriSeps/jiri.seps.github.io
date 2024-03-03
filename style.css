@@ -518,6 +518,15 @@ section.contact .card-wrapper .card h6{
     background-color: var(--dark);
 }
 
+#requirementstable {
+    border: 1px solid black;
+    border-collapse: collapse;
+    color: var(--pure);
+    margin: 0 auto;
+    padding: 5px; /* Adjust padding as needed */
+    /* Add any additional styles as needed */
+}
+
 footer{
     background:var(--dark);
     text-align: center;
