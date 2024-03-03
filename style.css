@@ -299,7 +299,7 @@ section.freelancer p{
 }
 
 
-section.reviews .movingimage {
+section.classes .movingimage {
     position: fixed;
     top: 0;
     left: 0;
@@ -308,7 +308,7 @@ section.reviews .movingimage {
     z-index: -2;
 }
 
-section.reviews .slider .slide img{
+section.classes .slider .slide img{
     width:300px;
     height:300px;
     border-radius: 100%;
@@ -319,33 +319,33 @@ section.reviews .slider .slide img{
     object-fit:contain;
     margin-bottom:2rem;
 }
-section.reviews .slider .slide{
+section.classes .slider .slide{
     text-align: center;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding:0 10rem;
 }
-section.reviews .slider .slide p{
+section.classes .slider .slide p{
     font-family: 'Lato', sans-serif;
     color:var(--ternary);
     margin-bottom: 1rem;
 }
-section.reviews .slider .slide span{
+section.classes .slider .slide span{
     font-size: 1rem;
     color:var(--pure);
 }
-section.reviews .slider-dots .dots{
+section.classes .slider-dots .dots{
     list-style-type:none;
     display:flex!important;
     justify-content: center;
 }
 
-section.reviews .slider-dots{
+section.classes .slider-dots{
     margin-top:1rem;
 }
 
-section.reviews .slider-dots button{
+section.classes .slider-dots button{
     font-size:0;
     width:10px;
     height:10px;
@@ -360,7 +360,7 @@ section.reviews .slider-dots button{
     -o-border-radius: 50px;
     cursor: pointer;
 }
-section.reviews .dots li.slick-active button{
+section.classes .dots li.slick-active button{
     background:var(--primary);
     width:20px;
 }
@@ -410,54 +410,54 @@ section.locations .card-wrapper .card img{
     width:100%;
 }
 
-section.blog{
+section.patchnotes{
     background:var(--dark);
-    clip-path:polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 75% 100%, 25% 100%, 0 90%);
     padding-bottom:12rem;
 }
-section.blog .section-heading{
+section.patchnotes .section-heading{
     color:var(--pure);
 }
-section.blog .card-wrapper{
+section.patchnotes .card-wrapper{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap:3rem;
 }
-section.blog .card-wrapper .card{
+section.patchnotes .card-wrapper .card{
     background:var(--pure);
 }
-section.blog .card-wrapper .card .img-wrapper img{
-    width:100%;
-    height:100%;
-    object-fit: cover;
+section.patchnotes .card-wrapper .card .img-wrapper img{
+    width:auto;
+    height:auto;
+    object-fit: contain;
 }
-section.blog .card-wrapper .card .card-content{
-    padding:1rem;
+section.patchnotes .card-wrapper .card .card-content{
+    padding: 1rem;
     padding-left:2rem;
     padding-right:2rem;
 }
-section.blog .card-wrapper .card .card-content h2{
+section.patchnotes .card-wrapper .card .card-content h2{
     font-size:1rem;
     font-weight:600;
 }
-section.blog .card-wrapper .card .card-content a{
-    color:var(--secondary);
+section.patchnotes .card-wrapper .card .card-content a{
+    color:var(--primary);
     text-decoration: none;
 }
-section.blog .card-wrapper .card .card-content a:hover{
-    color:var(--primary);
+section.patchnotes .card-wrapper .card .card-content a:hover{
+    color:var(--pureblack);
 }
-section.blog .card-wrapper .card .card-content span{
-   color:var(--ternary);
+section.patchnotes .card-wrapper .card .card-content span{
+   color:var(--pureblack);
    font-size:0.8rem; 
 }
-section.blog .card-wrapper .card .card-content p{
+section.patchnotes .card-wrapper .card .card-content p{
     font-family:'Lato', sans-serif;
-    color:var(--ternary);
+    color:var(--pureblack);
     margin-top:1rem;
     margin-bottom:1rem;
 }
-section.blog .card-wrapper .card .card-content a.read-more{
+section.patchnotes .card-wrapper .card .card-content a.read-more{
     font-size:0.8rem;
 }
 
@@ -644,10 +644,10 @@ footer .copyright{
     section.locations .card-wrapper{
         grid-template-columns: repeat(2,1fr);
     }
-    section.blog .card-wrapper{
+    section.patchnotes .card-wrapper{
         grid-template-columns: repeat(1, 1fr);
     }
-    section.blog{
+    section.patchnotes{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 97%, 0 100%);
     }
 }
@@ -697,7 +697,7 @@ footer .copyright{
         clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 75%, 0 60%);
         padding-bottom: 8rem;
     }
-    section.reviews .slider .slide{
+    section.classes .slider .slide{
         padding:0;
     }
     .section-heading + p{
