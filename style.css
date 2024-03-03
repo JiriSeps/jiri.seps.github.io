@@ -282,11 +282,11 @@ section.awards .card-wrapper .card:hover h2, section.awards .card-wrapper .card:
 }
 
 section.freelancer{
-    padding-top: 8rem;
+    padding-top: 6rem;
     text-align: center;
     color:var(--pure);
     clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 75%, 0 60%);
-    padding-bottom:30rem;
+    padding-bottom:20rem;
 }
 section.freelancer h1{
     font-size:3rem;
@@ -695,7 +695,7 @@ footer .copyright{
     }
     section.freelancer{
         clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 75%, 0 60%);
-        padding-bottom: 8rem;
+        padding-bottom: 13rem;
     }
     section.classes .slider .slide{
         padding:0;
