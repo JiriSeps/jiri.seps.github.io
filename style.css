@@ -96,14 +96,15 @@ header nav .branding{
     padding:3rem 0;
 }
 .hero .left img{
-    width:350px;
-    height:auto;
+    width:390px;
+    height:auto;4
 }
 .hero .right{
     color:var(--pure);
 }
 .hero .right h6{
-    font-size:1.6rem;
+    margin-top:-5rem;
+    font-size:1.5rem;
     color:var(--pure);
     margin-bottom:0.2rem;
 }

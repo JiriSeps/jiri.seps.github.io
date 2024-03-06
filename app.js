@@ -41,11 +41,25 @@ $(document).ready(function(){
     let times = document.querySelector('.times');
     let mobileNav = document.querySelector('.mobile-nav');
     
-    hamburger.addEventListener('click', function(){
-        mobileNav.classList.add('open');  
-    });
+    // Function to open mobile navigation
+    function openMobileNav() {
+        mobileNav.classList.add('open');
+    }
     
-    times.addEventListener('click', function(){
-        mobileNav.classList.remove('open');  
-    });
+    // Function to close mobile navigation
+    function closeMobileNav() {
+        mobileNav.classList.remove('open');
+    }
+    
+    // Click event listener for hamburger icon
+    hamburger.addEventListener('click', openMobileNav);
+    
+    // Touch event listener for hamburger icon
+    hamburger.addEventListener('touchstart', openMobileNav);
+    
+    // Click event listener for times icon
+    times.addEventListener('click', closeMobileNav);
+    
+    // Touch event listener for times icon
+    times.addEventListener('touchstart', closeMobileNav);
 });
