@@ -817,7 +817,7 @@ footer .copyright{
     .hero .right {
         position: absolute;
         top: 250px;
-        padding: 1 2rem;
+        padding: 0 2rem;
         left: 10px;
     }
 
