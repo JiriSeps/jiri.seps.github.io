@@ -395,45 +395,40 @@
                 </div>
                 <div class="sysrequirements-table" style="margin-top: 20px; text-align: center;">
                     <h3 style="color: var(--pure);">Graphics Settings</h3>
-                    <table id="requirementstable">
-                        <thead>
-                            <tr>
-                                <th id="setting" scope="col" rowspan="2">Setting</th>
-                                <th id="min_header" scope="col" colspan="2">Minimum</th>
-                                <th id="rec_header" scope="col" colspan="2">Recommended</th>
-                            </tr>
-                            <tr>
-                                <th id="res_min_header" scope="col">Resolution</th>
-                                <th id="qual_min_header" scope="col">Quality</th>
-                                <th id="res_rec_header" scope="col">Resolution</th>
-                                <th id="qual_rec_header" scope="col">Quality</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td id="low_setting" scope="row">Low</td>
-                                <td headers="res_min_header">1280x720</td>
-                                <td headers="qual_min_header">Low</td>
-                                <td headers="res_rec_header">1920x1080</td>
-                                <td headers="qual_rec_header">High</td>
-                            </tr>
-                            <tr>
-                                <td id="med_setting" scope="row">Medium</td>
-                                <td headers="res_min_header">1600x900</td>
-                                <td headers="qual_min_header">Medium</td>
-                                <td headers="res_rec_header">2560x1440</td>
-                                <td headers="qual_rec_header">Ultra</td>
-                            </tr>
-                            <tr>
-                                <td id="high_setting" scope="row">High</td>
-                                <td headers="res_min_header">1920x1080</td>
-                                <td headers="qual_min_header">High</td>
-                                <td headers="res_rec_header">3840x2160</td>
-                                <td headers="qual_rec_header">Ultra</td>
-                            </tr>
-                        </tbody>
+                    <table>
+                        <tr>
+                            <th rowspan="2" id="h">Setting</th>
+                            <th colspan="2" id="min_header">Minimum</th>
+                            <th colspan="2" id="rec_header">Recommended</th>
+                        </tr>
+                        <tr>
+                            <th id="res_min_header" headers="min_header">Resolution</th>
+                            <th id="qual_min_header" headers="min_header">Quality</th>
+                            <th id="res_rec_header" headers="rec_header">Resolution</th>
+                            <th id="qual_rec_header" headers="rec_header">Quality</th>
+                        </tr>
+                        <tr>
+                            <td id="low_setting" headers="h">Low</td>
+                            <td headers="res_min_header">1280x720</td>
+                            <td headers="qual_min_header">Low</td>
+                            <td headers="res_rec_header">1920x1080</td>
+                            <td headers="qual_rec_header">High</td>
+                        </tr>
+                        <tr>
+                            <td id="med_setting" headers="h">Medium</td>
+                            <td headers="res_min_header">1600x900</td>
+                            <td headers="qual_min_header">Medium</td>
+                            <td headers="res_rec_header">2560x1440</td>
+                            <td headers="qual_rec_header">Ultra</td>
+                        </tr>
+                        <tr>
+                            <td id="high_setting" headers="h">High</td>
+                            <td headers="res_min_header">1920x1080</td>
+                            <td headers="qual_min_header">High</td>
+                            <td headers="res_rec_header">3840x2160</td>
+                            <td headers="qual_rec_header">Ultra</td>
+                        </tr>
                     </table>
-                    
                 </div>
             </div>
         </section>
