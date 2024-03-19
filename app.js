@@ -16,7 +16,7 @@ $(document).ready(function(){
     function handleParallax() {
         const scrolled = $(window).scrollTop();
         // Adjust scroll speed for mobile
-        const scrollMultiplier = $(window).width() > 768 ? 0.15 : 0.08;
+        const scrollMultiplier = $(window).width() > 768 ? 0.1 : 0.05;
         $('.parallax-bg.slower').css('transform', 'translateY(' + -(scrolled * scrollMultiplier) + 'px)');
         $('.parallax-bg.faster').css('transform', 'translateY(' + -(scrolled * (scrollMultiplier + 0.1)) + 'px)');
     }

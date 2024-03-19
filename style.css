@@ -498,14 +498,12 @@ fieldset {
     margin-bottom: 10px;
   }
   
-  /* Style labels */
   label {
     display: block;
     margin-bottom: 5px;
     color: #333;
   }
   
-  /* Style inputs and textareas */
   input[type="text"],
   input[type="email"],
   textarea {
@@ -736,7 +734,7 @@ footer .copyright{
     }
 
     section.about h3{
-        color:var(--ternary);
+        color:var(--pure);
     }
 
     section{
@@ -805,5 +803,43 @@ footer .copyright{
     #requirementstable {
         width: 100%;
         margin-bottom: 20px; /* Optional: Add space between the two tables */
+    }
+
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+
+    header{
+        clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 75% 100%, 0 110%);
+        padding-bottom: 6rem;
+    }
+    
+    .hero .right {
+        position: absolute;
+        top: 250px;
+        padding: 1 2rem;
+        left: 10px;
+    }
+
+    section.about p{
+        color:var(--pure);
+    }
+
+    section.about h3{
+        color:var(--pureblack);
+    }
+    .hero .left {
+        margin-top: -8rem;
+        margin-left: 30rem;
+        padding-bottom: 5rem;
+    }
+    .hero .left img{
+        position: absolute;
+        width: 200px;
+    }
+
+    section.freelancer {
+        padding-top: 2rem;
+        padding-bottom: 8rem;
     }
 }
