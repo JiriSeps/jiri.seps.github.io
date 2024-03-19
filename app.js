@@ -63,3 +63,4 @@ $(document).ready(function(){
     // Touch event listener for times icon
     times.addEventListener('touchstart', closeMobileNav);
 });
+ 

@@ -97,7 +97,7 @@ header nav .branding{
 }
 .hero .left img{
     width:390px;
-    height:auto;4
+    height:auto;
 }
 .hero .right{
     color:var(--pure);
@@ -372,13 +372,14 @@ section.locations{
 }
 section.locations .card-wrapper{
     display:grid;
-    grid-template-columns:repeat(3,2fr);
-    grid-gap:2rem;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap:1rem;
 }
 section.locations .card-wrapper .card{
     position:relative;
-    height:200px;
-
+    height: 260px; /* Increased height of the cards */
+    width: 100%; /* Adjusted width of the cards */
+    overflow: hidden; /* Ensures images won't overflow the cards */
 }
 section.locations .card-wrapper .card .overlay{
     position:absolute;
@@ -410,6 +411,7 @@ section.locations .card-wrapper .card .overlay a{
 section.locations .card-wrapper .card img{
     height:100%;
     width:100%;
+    object-fit: cover; 
 }
 
 section.patchnotes{
@@ -484,6 +486,35 @@ section.contact .card-wrapper .card h6{
     font-weight:400;
     margin-bottom:4rem;
 }
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Style labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  /* Style inputs and textareas */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
 
 
 .sysrequirements .sysrequirements-wrapper {
@@ -637,12 +668,26 @@ footer .copyright{
     header{
         clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 75% 100%, 0 110%);
     }
+
+    .section-heading {
+        color: var(--pure);
+    }
     section.about .about-me-img{
         height: 360px;
     }
     section.awards .card-wrapper{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .section-heading + p{
+        margin-bottom: 3rem;
+        color: var(--pure);
+    }
+
+    .section-heading {
+        color: var(--pure);
+    }
+
     section.locations .card-wrapper{
         grid-template-columns: repeat(2,1fr);
     }
@@ -685,6 +730,15 @@ footer .copyright{
     .about .right .social{
         justify-content: center;
     }
+
+    section.about p{
+        color:var(--pure);
+    }
+
+    section.about h3{
+        color:var(--ternary);
+    }
+
     section{
         padding: 4rem 0;
     }
@@ -704,6 +758,11 @@ footer .copyright{
     }
     .section-heading + p{
         margin-bottom: 3rem;
+        color: var(--pure);
+    }
+
+    .section-heading {
+        color: var(--pure);
     }
     section.locations .card-wrapper{
         grid-template-columns: repeat(1,1fr);
@@ -729,7 +788,22 @@ footer .copyright{
         margin-top: 20px;
     }
     .sysrequirements-table {
-        width: calc(100% - 20px); /* Set the width of the table to 100% of the container width minus margin */
+        width: 100%;
         overflow-x: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* Splitting the table into two columns */
+    .table-container {
+        overflow-x: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Adjusting the width of each table */
+    #requirementstable {
+        width: 100%;
+        margin-bottom: 20px; /* Optional: Add space between the two tables */
     }
 }
