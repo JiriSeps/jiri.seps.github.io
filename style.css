@@ -748,8 +748,8 @@ footer .copyright{
         line-height:1.2;
     }
     section.patchnotes{
-        clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 75%, 0 60%);
-        padding-bottom: 13rem;
+        clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 70%, 0 74%);
+        padding-bottom: 40rem;
     }
     section.classes .slider .slide{
         padding:0;
