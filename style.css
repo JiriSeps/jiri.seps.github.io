@@ -283,18 +283,18 @@ section.awards .card-wrapper .card:hover h2, section.awards .card-wrapper .card:
     
 }
 
-section.freelancer{
+section.patchnotes{
     padding-top: 6rem;
     text-align: center;
     color:var(--pure);
     clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 75%, 0 60%);
     padding-bottom:20rem;
 }
-section.freelancer h1{
+section.patchnotes h1{
     font-size:3rem;
     margin-bottom:0.5rem;
 }
-section.freelancer p{
+section.patchnotes p{
     font-size:1.3rem;
     margin-bottom: 2rem;
     font-family:'Lato', sans-serif;
@@ -744,10 +744,10 @@ footer .copyright{
         grid-template-columns: repeat(1, 1fr);
         margin-top:6rem;
     }
-    section.freelancer h2{
+    section.patchnotes h2{
         line-height:1.2;
     }
-    section.freelancer{
+    section.patchnotes{
         clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 75%, 0 60%);
         padding-bottom: 13rem;
     }
@@ -838,7 +838,7 @@ footer .copyright{
         width: 200px;
     }
 
-    section.freelancer {
+    section.patchnotes {
         padding-top: 2rem;
         padding-bottom: 8rem;
     }
